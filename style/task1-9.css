@@ -11,6 +11,9 @@ ol,ul{
 a{
 	text-decoration: none;
 }
+button{
+	cursor:pointer;
+}
 header{
 	width:100%;
 	height:56px;
@@ -316,34 +319,104 @@ container
 	margin:0 auto;
 	margin-top:19px;
 	box-shadow:1px 1px 1px 1px #B0B0B0;
+	font:12px "Microsoft YaHei";
+	color:#aaa;
 }
 .c-search-1{
 	margin-left:30px;
-	background:green;
 	height:100%;
 	width:120px;
 	float:left;
 }
+.c-search-1 select{
+	width:72px;
+	height:26px;
+	margin-left:8px;
+	margin-top:20px;
+	font:12px "Microsoft YaHei";
+}
 .c-search-2{
 	margin-left:30px;
-	background:green;
 	height:100%;
 	width:190px;
 	float:left;
 }
+.c-search-2 .left{
+	height:100%;
+	width:156px;
+	float:left;
+}
+.c-search-2 .right{
+	width:34px;
+	height:100%;
+	float:left;
+}
+.c-search-2 select{
+	width:120px;
+	height:25px;
+	margin-left:8px;
+	margin-top:12px;
+	font:12px "Microsoft YaHei";
+}
+.c-search-2 .right a{
+	display:inline-block;
+	margin-top:22px;
+	cursor:pointer;
+}
+.c-search-2 .right a img{
+	margin-left:7px;
+	padding-top:1.5px;
+}
 .c-search-3{
 	margin-left:30px;
-	background:green;
 	height:100%;
 	width:290px;
 	float:left;
+	font:12px "Microsoft YaHei";
+}
+.c-search-3 #item4{
+	width:118px;
+	height:23px;
+	padding:0px;
+	border:1px solid rgba(0,0,0,0.3);
+	margin-left:8px;
+	margin-right:13px;
+	margin-top:12px;
+}
+.c-search-3 #item5{
+	width:70px;
+	height:25px;
+	margin-left:8px;
+	margin-top:12px;
+}
+.c-search-3 #item6{
+	width:70px;
+	height:25px;
+	margin-left:8px;
+	margin-right:13px;
+	margin-top:12px;
+}
+.c-search-3 #item7{
+	width:120px;
+	height:25px;
+	margin-left:8px;
+	margin-top:12px;
 }
 .c-search-btn{
 	margin-left:30px;
-	background:green;
 	height:100%;
 	width:50px;
 	float:left;
+}
+.c-search-btn button{
+	background:rgb(56,138,193);
+	border:none;
+	color:#FFF;
+	width:50px;
+	height:25px;
+	margin-top:30px;
+	font:12px "Microsoft YaHei";
+	line-height:25px;
 }
 .c-dayHistory{
 	width:890px;
@@ -509,6 +582,7 @@ container
 	background:rgba(130,130,130,0.5);
 	position:relative;
 	z-index:1;
+	cursor:pointer;
 }
 .c-projectList-left .bottom li .item-content{
 	overflow:auto;
@@ -540,6 +614,82 @@ container
 	height:100%;
 	box-shadow:1px 1px 1px 1px #B0B0B0;
 	background:#FFF;
+	overflow:auto;
+}
+.c-projectList-right .bottom{
+	width:350px;
+	box-sizing:border-box;
+	padding:20px 40px;
+}
+.c-projectList-right .bottom .title,.c-projectList-right .bottom .price,
+.c-projectList-right .bottom .leader,.c-projectList-right .bottom .description,
+.c-projectList-right .bottom .footer label{
+	font:12px "Microsoft YaHei";
+	color:#c3c2c2;
+}
+.c-projectList-right .bottom .title,.c-projectList-right .bottom .price,
+.c-projectList-right .bottom .leader,.c-projectList-right .bottom .description{
+	padding-left:20px;
+}
+.c-projectList-right .bottom .title span:last-child,.c-projectList-right .bottom .price span:last-child,
+.c-projectList-right .bottom .leader span:last-child,.c-projectList-right .bottom .description span:last-child{
+	color:#000;
+}
+.c-projectList-right .bottom span{
+	display:block;
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.c-projectList-right .bottom .price,
+.c-projectList-right .bottom .leader{
+	box-sizing:border-box;
+	float:left;
+	border-top:1px #c3c2c2 solid;
+	border-bottom:1px #c3c2c2 solid;
+	padding-left:20px;
+	position:relative;
+	margin-top:10px;
+}
+.c-projectList-right .bottom .price{
+	border-right:1px #c3c2c2 solid;
+	width:30%;
+}
+.c-projectList-right .bottom .leader{
+	width:70%;
+}
+.c-projectList-right .bottom .description{
+	margin-top:65px;
+	margin-bottom:10px;
+}
+.c-projectList-right .bottom .footer{
+	margin-top:80px;
+	padding-top:10px;
+	border-top:1px #c3c2c2 solid;
+}
+.c-projectList-right .bottom .footer input,.c-projectList-right .bottom .footer label{
+	float:left;
+	margin:0px;
+	padding:0px;
+	margin-top:6px;
+	margin-right:6px;
+}
+.c-projectList-right .bottom .footer input{
+	margin-top:8px;
+	margin-left:20px;
+}
+.c-projectList-right .bottom .footer{
+	height:30px;
+}
+.c-projectList-right .bottom .footer button{
+	width:50px;
+	height:25px;
+	background:rgb(56,138,193);
+	color:#FFF;
+	font:12px "Microsoft YaHei";
+	border:none;
+	line-height:25px;
+	float:right;
+	margin-right:10px;
 }
 .c-calendar{
 	display:inline-block;
@@ -550,14 +700,99 @@ container
 	margin-top:10px;
 	margin-bottom:19px;
 	background:#FFF;
+	float:left;
+}
+.c-calendar .bottom{
+	width:350px;
+	font:12px "Microsoft YaHei";
 }
 .c-rank{
 	display:inline-block;
 	width:530px;
 	height:356px;
 	box-shadow:1px 1px 1px 1px #B0B0B0;
-	margin-left:6px;
+	margin-left:10px;
 	margin-top:10px;
 	margin-bottom:19px;
 	background:#FFF;
+	float:left;
+}
+.c-rank .bottom{
+	width:100%;
+	overflow:auto;
+	height:315px;
+}
+.c-rank .bottom table{
+	width:450px;
+	border-collapse: collapse;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.c-rank .bottom table thead th{
+	padding:5px 10px;
+	border:1px #c3c2c2 solid;
+	font:12px "Microsoft YaHei";
+}
+.c-rank .bottom table tbody td{
+	padding:5px 10px;
+	border:1px #c3c2c2 solid;
+	font:12px "Microsoft YaHei";
+	text-align:center;
+}
+.c-rank .bottom table tbody td .bar{
+	display:inline-block;
+	width:166px;
+	height:6px;
+	background:rgb(220,220,220);
+	margin-left:10px;
+}
+.c-rank .bottom table tbody tr td .bar span{
+	display:inline-block;
+	height:100%;
+	float:left;
+}
+.c-rank .bottom table tbody tr:nth-child(1) .bar span{
+	width:90%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(2) .bar span{
+	width:80%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(3) .bar span{
+	width:75%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(4) .bar span{
+	width:60%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(5) .bar span{
+	width:55%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(6) .bar span{
+	width:50%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(7) .bar span{
+	width:40%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(8) .bar span{
+	width:40%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(9) .bar span{
+	width:35%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(10) .bar span{
+	width:30%;
+	background:rgb(56,138,193);
+}
+.c-rank .bottom table tbody tr:nth-child(11) .bar span{
+	width:25%;
+	background:rgb(56,138,193);
 }
