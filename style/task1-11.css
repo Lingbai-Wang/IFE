@@ -1,0 +1,312 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+body{
+    background:rgba(0,0,0,0.1);
+}
+a{
+    text-decoration:none;
+}
+ul,li{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+header{
+    position:fixed;
+    top:0px;
+    width: 100%;
+    height: 36px;
+    line-height:36px;
+    background:rgba(145, 212, 218, 1);
+}
+header a img{
+    width:11px;
+    height:20px;
+    vertical-align: -15%;
+}
+header a{
+    position:absolute;
+    left:10px;
+    top:0;
+    bottom:0;
+    color:#FFF;
+    width:48px;
+    height:100%;
+    font-size:0.9rem;
+    font-weight:500;
+    font-family:"SimHei";
+}
+header h1{
+    margin:0px;
+    text-align:center;
+    color:#FFF;
+    font-size:1rem;
+    font-weight:100;
+    font-family:"SimHei";
+}
+nav{
+    position:fixed;
+    top:36px;
+    width:100%;
+    height:36px;
+    background:#FFF;
+}
+nav ul{
+    height:100%;
+}
+nav ul li{
+    display:inline-block;
+    font-size:0.7rem;
+    width:20%;
+    height:100%;
+    text-align:center;
+    line-height:36px;
+}
+nav ul li a{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    color:rgba(0,0,0,0.8);
+}
+nav ul .active{
+    box-sizing:border-box;
+    border-bottom:3px rgba(145, 212, 218, 1) solid;
+}
+.container{
+    width:100%;
+    margin-top:72px;
+}
+.container .banner{
+    display:block;
+}
+.container .banner a{
+    display:block;
+}
+.container .banner a img{
+    display:block;
+    width:100%;
+}
+.container .section-1{
+    box-sizing:border-box;
+    padding:0px 10px;
+    background:#FFF;
+}
+.container .section-1 .top{
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom:2px rgba(0,0,0,0.1) solid;
+    width:100%;
+    *zoom:1;
+}
+.container .section-1 .top:after{
+    content:"\200B"; display:block; height:0; clear:both;
+}
+.container .section-1 .top a{
+    color:rgba(0,0,0,0.8);
+    display:inline-block;
+    width:20%;
+    float:left;
+    text-align:center;
+    font:12px "Microsoft YaHei";
+}
+.container .section-1 .top a span{
+    display: block;
+    height: 36px;
+    background: url(../img/img-1-11/tag.png) no-repeat center center/36px 36px;
+    margin-bottom:5px;
+}
+.container .section-1 .bottom{
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    *zoom:1;
+}
+.container .section-1 .bottom:after{
+    content:"\200B"; display:block; height:0; clear:both;
+}
+.container .section-1 .bottom a{
+    color:rgba(0,0,0,0.8);
+    display:inline-block;
+    width:32.8%;
+    float:left;
+    text-align:center;
+}
+.container .section-1 .bottom a img{
+    display:block;
+    width:100%;
+}
+.container .section-1 .bottom a h2{
+    font-size:1rem;
+    font-weight:normal;
+    font-family:"SimHei";
+}
+.container .section-1 .bottom a h3{
+    font-size:0.9rem;
+    font-weight:500;
+    font-family:"SimHei";
+}
+.container .section-1 .bottom .line{
+    display:inline-block;
+    width:2px;
+    height:120px;
+    background:rgba(0,0,0,0.1);
+    float:left;
+    margin-top:10px;
+}
+.container .section-2{
+    width:100%;
+    height:230px;
+    margin-top:10px;
+    background:#FFF;
+    box-sizing:border-box;
+    padding:0 14px;
+}
+.container .section-2 .top{
+    display:inline-block;
+    width:100%;
+    height:40px;
+    font-family:"SimHei";
+    line-height:40px;
+    border-bottom:1px rgba(0,0,0,0.1) solid;
+}
+.container .section-2 .container{
+    display:inline-block;
+    margin-top:10px;
+    width:100%;
+    height:34%;
+}
+.container .section-2 .container .left{
+    display:inline-block;
+    float:left;
+    width:27%;
+    height:100%;
+}
+.container .section-2 .container .left img{
+    width:100%;
+    height:100%;
+}
+.container .section-2 .container .right{
+    display:inline-block;
+    float:left;
+    width:73%;
+    height:100%;
+}
+.container .section-2 .container .right ul:after{
+    content:"\200B"; display:block; height:0; clear:both;
+}
+.container .section-2 .container .right ul{
+    width:100%;
+    height:100%;
+    *zoom:1;
+}
+.container .section-2 .container .right ul li{
+    display:inline-block;
+    margin-left:10px;
+    margin-bottom:10px;
+    width:44%;
+    height:43.15%;
+    float:left;
+    background: rgba(0,0,0,0.1);
+    font-size:0.8rem;
+    text-align:center;
+    line-height:250%;
+}
+.container .section-2 .container .right ul li:nth-child(3){
+    margin-bottom:0px;
+}
+.container .section-2 .container .right ul li:nth-child(4){
+    margin-bottom:0px;
+}
+.container .section-2 .container:last-child{
+    margin-bottom:10px;
+}
+.container .section-3{
+    width:100%;
+    margin-top:10px;
+    background:#FFF;
+}
+.container .section-3{
+    width:100%;
+}
+.container .section-3 .container-1{
+    width:100%;
+    box-sizing:border-box;
+    padding:10px 14px;
+    border-bottom:1px rgba(0,0,0,0.1) solid;
+    *zoom:0;
+}
+.container .section-3 .container-1:after{
+    content:"\200B"; display:block; height:0; clear:both;
+}
+.container .section-3 .container-1 .left{
+    display:inline-block;
+    width:35%;
+    float:left;
+}
+.container .section-3 .container-1 .left img{
+    width:100%;
+}
+.container .section-3 .container-1 .right{
+    display:inline-block;
+    float:left;
+    width:65%;
+}
+.container .section-3 .container-1 .right h3{
+    font-size:1rem;
+    font-weight:500;
+    font-family:"SimHei";
+    margin:0;
+    margin-top:5px;
+    margin-left:10px;
+    margin-bottom:17px;
+}
+.container .section-3 .container-1 .right aside{
+    font-size:0.7rem;
+    margin-left:10px;
+    font-family:"SimHei";
+    color:rgba(0,0,0,0.7);
+}
+.container .section-3 .container-2{
+    width:100%;
+    box-sizing:border-box;
+    padding:10px 14px;
+}
+.container .section-3 .container-2 .top{
+    margin-top:0px;
+    margin-bottom:10px;
+}
+.container .section-3 .container-2 .top h3{
+    margin:0px;
+    font-size:1rem;
+    font-weight:500;
+    font-family:"SimHei";
+}
+.container .section-3 .container-2 .container:after{
+    content:"\200B"; display:block; height:0; clear:both;
+}
+.container .section-3 .container-2 .container{
+    *zoom:1;
+    margin-top:10px;
+}
+.container .section-3 .container-2 .container img{
+    float:left;
+    width:32%;
+    margin-right:5px;
+}
+.container .section-3 .container-2 .container img:nth-child(3){
+    margin-right:0px;
+}
+.container .section-3 .container-2 aside{
+    height:16px;
+    font-size:0.7rem;
+    font-weight:500;
+    font-family:"SimHei";
+    margin-top:10px;
+    color:rgba(0,0,0,0.7);
+}
+footer{
+    height:30px;
+    background:rgba(0,0,0,0.1);
+}
